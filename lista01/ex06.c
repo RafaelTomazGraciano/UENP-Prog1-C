@@ -1,4 +1,4 @@
-/*Faca um programa que leia dois valores x e y e permute o conte ́udo das duas variaveis,
+/*Faca um programa que leia dois valores x e y e permute o conteudo das duas variaveis,
 ou seja, o valor de x ser armazenado em y e vice-versa. Ao final, mostre o conteudo das
 variaveis.*/
 
@@ -13,8 +13,8 @@ int main()
     scanf("%f",&y);
     inversorx=x;
     inversory=y;
-    inversorx=inversory;
-    inversory=inversorx;
+    x=inversory;
+    y=inversorx;
     printf("O valor de x: %.2f\n",x);
     printf("O valor de y: %.2f\n",y);
     return 0;
