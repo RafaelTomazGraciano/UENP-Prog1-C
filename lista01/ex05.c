@@ -10,10 +10,10 @@ int main()
     float d, xa, xb, ya, yb;
     printf("Digite a coordenada x do ponto a :");
     scanf("%f",&xa);
-    printf("Digite a coordenda x do ponto b: ");
-    scanf("%f",&xb);
-    printf("Digite a coordenada y no ponto a: ");
+    printf("Digite a coordenda y do ponto a: ");
     scanf("%f",&ya);
+    printf("Digite a coordenada x no ponto b: ");
+    scanf("%f",&xb);
     printf("Digite a coordenada y no ponto b: ");
     scanf("%f",&yb);
     d=sqrt(pow((xb-xa),2)+pow((yb-ya),2));
