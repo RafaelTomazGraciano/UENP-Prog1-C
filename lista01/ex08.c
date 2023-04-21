@@ -7,8 +7,8 @@ salario-base.*/
 int main()
 {
     float salario;
-    printf("Insira o valor do seu salario salario-base: ");
+    printf("Insira o valor do seu salario salario-base: R$ ");
     scanf("%f",&salario);
-    printf("O seu salario a receber e: %2.f",salario*0.88+50.00);
+    printf("O seu salario a receber e: R$%.2f",salario*0.88+50.00);
     return 0;
 }
