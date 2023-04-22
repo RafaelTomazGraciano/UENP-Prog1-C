@@ -10,7 +10,7 @@ int main()
     scanf("%f",&distancia);
     printf("Digite o toatl de combustivel gasto em litros: ");
     scanf("%f",&combustivel);
-    printf("O consumo medio do seu veículo e: %.2f Km/L",distancia/combustivel);
+    printf("O consumo medio do seu veiculo e: %.2f Km/L",distancia/combustivel);
 
     return 0;
 }
