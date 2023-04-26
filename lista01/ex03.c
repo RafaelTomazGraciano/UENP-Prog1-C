@@ -8,9 +8,9 @@ int main()
     float precodoproduto, dolar, euro;
     printf("Digite o preco do produto: ");
     scanf("%f",&precodoproduto);
-    printf("Dite o preco do dolar: ");
+    printf("Dite o valor do dolar: ");
     scanf("%f",&dolar);
-    printf("Digite o preco do euro: ");
+    printf("Digite o valor do euro: ");
     scanf("%f",&euro);
     printf("O valor do produto em dolar e: %.2f\n",precodoproduto/dolar);
     printf("O valor do produto em euro e: %.2f",precodoproduto/euro);
