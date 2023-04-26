@@ -1,4 +1,4 @@
-/*Faca um programa que leia o raio de uma cırculo, calcule e mostre o seu perımetro (p) e
+/*Faca um programa que leia o raio de um cırculo, calcule e mostre o seu perımetro (p) e
 sua  ́area (a).*/
 
 #include <stdio.h>
