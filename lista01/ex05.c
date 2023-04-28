@@ -19,5 +19,4 @@ int main()
     d=sqrt(pow((xb-xa),2)+pow((yb-ya),2));
     printf("A distancia entre A e B e: %.2f",d);
     return 0;
-    printf
 }
