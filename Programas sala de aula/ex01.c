@@ -27,9 +27,9 @@ int main()
         if (notaExame+media>=10){
             printf("Aprovado");
         }
-            else{
-                printf("Reprovado");
-                }
+         else{
+            printf("Reprovado");
+        }
          
         }
     else {
