@@ -20,7 +20,7 @@ int main()
     if (media>=7) {
         printf("Aprovado");
     }
-    else if (media>4 && media<7){
+    else if (media>=4 && media<7){
         printf("Exame ");
     }
     else {
