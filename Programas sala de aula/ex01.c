@@ -18,10 +18,13 @@ int main()
 
     printf("Media: %.2f\n", media);
     if (media>=7) {
-        printf("Aprovado\n");
+        printf("Aprovado");
+    }
+    else if (media>4 && media<7){
+        printf("Exame ");
     }
     else {
-        printf("\n Reprovado");
+        printf("Reprovado");
     }
     return 0;
 }
