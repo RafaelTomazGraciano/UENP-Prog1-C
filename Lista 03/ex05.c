@@ -11,9 +11,9 @@ int main()
     float lado1, lado2, lado3;
     printf("Digite um numero positivo para o primeiro lado do traingulo: ");
     scanf("%f", &lado1);
-    printf("Digite um nuemro positivo para o segundo lado do traingulo: ");
+    printf("Digite um numero positivo para o segundo lado do traingulo: ");
     scanf("%f", &lado2);
-    printf("Digite um nuemro positivo para o terceiro lado do traingulo: ");
+    printf("Digite um numero positivo para o terceiro lado do traingulo: ");
     scanf("%f", &lado3);
 
     if(lado1 == lado2 && lado1 == lado3){
