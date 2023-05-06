@@ -31,13 +31,13 @@ int main()
 
     if(quantidade > 0){
         switch(codigo){
-            case '1':
+            case 1:
                 valor = 5.30*quantidade; break;
-            case '2':
+            case 2:
                 valor = 6.00*quantidade; break;
-            case '3':
+            case 3:
                 valor = 3.20*quantidade; break;
-            case '4':
+            case 4:
                 valor = 2.50*quantidade; break;
             default :
                 printf("\n Codigo desconhecido \n "); break;
