@@ -8,7 +8,7 @@ int main()
     char operacao;
     printf("Digite um numero, um operador e outro numero: ");
     scanf("%f %c %f", &x, &operacao, &y);
-    //avalia op e executa comando correspondente
+    //avalia operacao e executa comando correspondente
     switch (operacao) {
         case '+':
         printf("Adicao = %.2f \n", x+y); break;
