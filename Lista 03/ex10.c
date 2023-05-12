@@ -15,8 +15,8 @@ int main()
 {
     int interfaceGrafica, inteligenciaArtificial, encapsulamento, indentacao, structs;
     printf("   Tabela de Requisitos da apresentacao  \n");
-    printf("Requisito 1: Intergace grafica OU Inteligencia Artificial \n");
-    printf("Requisito 2: Encapsulamento E Identacao \n");
+    printf("Requisito 1: Interface grafica OU Inteligencia Artificial \n");
+    printf("Requisito 2: Encapsulamento E Indentacao \n");
     printf("Requisito 3: Uso de Structs \n");
     printf("Voce apresentou sobre Interface Grafica? Sim[1] Nao[0] \n");
     scanf("%d", &interfaceGrafica);
