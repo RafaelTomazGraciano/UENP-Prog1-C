@@ -11,7 +11,8 @@ int main(){
     media = (n1 + n2 + n3 + n4)/4;
     printf(" Codigo: %d, Media: %.2f \n", codigo, media);
     printf("Mais alunos? Responda s ou n \n"); 
-    scanf(" %c", &continuar);
+    fflush(stdin)ç
+    scanf("%c", &continuar);
   }
   return 0;
 }
