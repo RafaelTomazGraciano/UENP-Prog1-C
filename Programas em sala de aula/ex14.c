@@ -6,10 +6,9 @@ int main()
 {
   int num;
   do{
-    printf("\nSe quiser parar digite 0\n");
-    printf("Digite um numero: ");
+    printf("Digite um numero ou 0 para sair: ");
     scanf("%d", &num);
-    if(num%2 == 1){
+    if(num & 1){
       printf("\nO numero e impar");
     }
     else{
