@@ -4,11 +4,12 @@
 
 int main()
 {
-  int x;
-  printf("Digite uo numero que sera gerada a tabuada: ");
-  scanf("%d", &x);
-  for(int contador = 0; contador <= 10; contador++){
-    printf("%d X %d = %d\n", x, contador, x*contador);
+  int x, contador;
+  for(contador = 1; contador <= 10; contador++){
+    printf("\n\n Tabuada do %d", contador);
+    for(x = 1; x <= 10; x++){
+      printf("\n %d X %d = %d\n", contador, x, x*contador);
+    }
   }
   return 0;
 }
