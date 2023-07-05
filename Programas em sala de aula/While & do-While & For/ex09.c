@@ -1,17 +1,13 @@
-/*Calcula fatorial*/
+/*Imprime numeros inteiros dentro de um intervalo*/
 
 #include <stdio.h>
 
 int main()
 {
-  int fat, n;
-  printf("Digite um numero: ");
-  scanf("%d", &n);
-  fat = 1;
-  while(n > 1){
-    fat *= n;
-    n--;
+  int x, y, n;
+  scanf("%d%d", &x, &y);
+  for(n = x+1; n < y; n++){
+    printf("\n%d", n);
   }
-  printf("\n%d", fat);
   return 0;
 }

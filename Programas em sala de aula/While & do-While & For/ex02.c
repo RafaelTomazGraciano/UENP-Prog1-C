@@ -1,17 +1,17 @@
-/*Calcula o fatorial*/
+/*Calcula fatorial*/
 
 #include <stdio.h>
 
 int main()
 {
-  int fat, i, n;
+  int fat, n;
   printf("Digite um numero: ");
   scanf("%d", &n);
   fat = 1;
-  do{
+  while(n > 1){
     fat *= n;
     n--;
-  }while(n > 1);
-  printf("%d", fat);
+  }
+  printf("\n%d", fat);
   return 0;
 }

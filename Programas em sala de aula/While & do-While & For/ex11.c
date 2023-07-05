@@ -1,18 +1,16 @@
-/*Média de um numero de alunos desconhecido de alunos*/
-#include<stdio.h>
+/* calcula fatorial de um numero n*/
+
+#include <stdio.h>
 
 int main(){
-  float n1, n2, n3, n4, media;
-  int codigo;
-  char continuar = 's';
-  while( continuar == 's'){
-    scanf("%d", &codigo);
-    scanf("%f%f%f%f", &n1, &n2, &n3, &n4);
-    media = (n1 + n2 + n3 + n4)/4;
-    printf(" Codigo: %d, Media: %.2f \n", codigo, media);
-    printf("Mais alunos? Responda s ou n \n"); 
-    fflush(stdin)ç
-    scanf("%c", &continuar);
+  int fat, n, i;
+  printf("Digite um numero: ");
+  scanf("%d", &n);
+  fat = 1;
+  for(i = n; i > 1; i--){
+    fat *= i;
   }
+  printf("\n %d! = %d \n", n, fat);
   return 0;
 }
+
