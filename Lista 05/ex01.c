@@ -4,11 +4,8 @@ e, ao final, exibe a sua area correspondente.*/
 
 #include <stdio.h>
 
-float area(){
-  int n;
-  float comprimento, largura, area;
-  printf("Digite a quantidade de terrenos: ");
-  scanf("%d", &n);
+float area(float comprimento, float largura, int n){
+  float area;
   for(int i = 0; i < n; i++){
     printf("\nDigite o comprimento: ");
     scanf("%f", &comprimento);
@@ -21,6 +18,10 @@ float area(){
 
 int main()
 {
-  area();
+  int n;
+  float comprimento, largura;
+  printf("Digite a quantidade de terrenos: ");
+  scanf("%d", &n);
+  area(comprimento, largura, n);
   return 0;
 }
