@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <math.h>
 
-float area(){
+float area()
+{
   float raio, area;
     printf("Digite o raio do circulo: ");
     scanf("%f", &raio);

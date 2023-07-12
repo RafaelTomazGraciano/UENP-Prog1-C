@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 
-int retorne(){
+int retorne()
+{
   int numero;
   printf("Digite um numero: ");
   scanf("%d", &numero);

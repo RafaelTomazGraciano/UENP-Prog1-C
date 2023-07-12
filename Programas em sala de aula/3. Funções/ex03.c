@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 
-float maior(int a, int b){
+int maior(int a, int b)
+{
   if (a > b){
     return a;
   }
@@ -19,6 +20,6 @@ int main(){
   scanf("%d",&b);
   printf("Digite o valor de c: ");
   scanf("%d",&c);
-  printf("O maior dos valores e %.2f", maior(maior(a,b),c));
+  printf("O maior dos valores e %d", maior(maior(a,b),c));
   return 0;
 }
