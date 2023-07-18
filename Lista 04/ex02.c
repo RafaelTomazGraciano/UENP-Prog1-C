@@ -1,21 +1,29 @@
-/*Faça um programa que receba 2 números inteiros quaisquer representados por x e y e
-mostre, em ordem crescente, todos os números entre x e y cujo resto da divisão deles por
-5 for igual a 2 ou igual a 3.*/
+/*Faca uma funcao que receba como parametro um numero inteiro e verifique se este e primo
+ou nao.*/
 
 #include <stdio.h>
 
-int main()
-{
-  int x,y;
-  printf("Digite o valor de inicio: ");
-  scanf("%d",&x);
-  printf("Digite o valor do fim: ");
-  scanf("%d",&y);
-  while(x <= y){
-    if(x % 5 == 2 || x % 5 == 3){
-      printf("\n%d", x);
+int primo(int numero){
+  int primo = 0;
+  for(int contador = 1; contador <= numero; contador++){
+    if(numero % contador == 0){
+      primo ++;
     }
-    x++;
   }
-   return 0;
+  return (primo == 2)? 1 : 0;
+}
+
+int main()
+{ 
+  int numero;
+  printf("Digite um numero: ");
+  scanf("%d",&numero);
+  switch(primo(numero)){
+    case 1:
+    printf("O numero e primo");
+    break;
+    case 0:
+    printf("O numero nao e primo");
+  }
+  return 0;
 }

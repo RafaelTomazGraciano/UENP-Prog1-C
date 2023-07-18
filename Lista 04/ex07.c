@@ -1,14 +1,18 @@
-/*Faca um programa que determine e mostre os 50 primeiros numeros multiplos de 3 considerando
-numeros maiores que 0.*/
+/*Faca uma funcao que receba um numero inteiro qualquer, calcule e mostre a tabuada deste
+numero.*/
 
 #include <stdio.h>
 
-int main()
-{
-  for(int x = 0; x < 50; x++){
-    if(x % 3 == 0){
-      printf("\n%d", x);
-    }
+void tabuada(){
+  int numero;
+  printf("Digite um numero: ");
+  scanf("%d", &numero);
+  for(int i = 0; i <= 10; i++){
+    printf("%d X %d = %d \n", numero, i, numero*i);
   }
+}
+
+int main(){
+  tabuada();
   return 0;
 }

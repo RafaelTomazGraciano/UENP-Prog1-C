@@ -1,15 +1,22 @@
-/*Faca um programa para calcular e gerar a tabuada dos numeros 1 ao 10.*/
+/*Faca uma funcao que receba um numero inteiro qualquer, calcule e mostre todos os seus
+divisores, bem como a quantidade de divisores existentes.*/
 
 #include <stdio.h>
 
-int main()
-{
-  int x, contador;
-  for(contador = 1; contador <= 10; contador++){
-    printf("\n\n Tabuada do %d", contador);
-    for(x = 1; x <= 10; x++){
-      printf("\n %d X %d = %d\n", contador, x, x*contador);
+void divisores(){
+  int numero, contador = 0;
+  printf("Digite um numero: ");
+  scanf("%d", &numero);
+  printf("Divisores: ");
+  for(int i = 1; i <= numero; i++){
+    if(numero % i == 0){
+      printf("\n %d", i);
+      contador++;
     }
   }
-  return 0;
+  printf("\nQuantidade de divisores: %d", contador);
+}
+
+int main(){
+  divisores();
 }

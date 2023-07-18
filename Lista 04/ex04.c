@@ -1,15 +1,24 @@
-/*Faça um programa que calcule e exiba o valor de S, em que S ́e dado por:
-S = 1/1 + 3/2 + 5/3 + 7/4 + ... + 99/50 */
+/*Faca um programa que calcule a potencia de um numero qualquer fornecido pelo usuario.
+Para isso, implemente uma funcao que receba como parametro dois numeros inteiros x e n,
+calcule e retorne para o programa principal o resultado de x^n.
+NAO USE nenhuma funcao pronta (ou seja, pow()).*/
 
 #include <stdio.h>
 
-int main(){
-  float x = 1,y = 1, S;
-  while(x <= 99 && y <= 50){
-    S += x/y;
-    x = x + 2;
-    y++;
+int potencia(int x, int n){
+  int resultado = 1;
+  for(int contador = 1; contador <= n; contador++){
+    resultado = resultado * x;
   }
-  printf("%.2f", S);
+  return resultado;
+}
+
+int main(){
+  int x, n;
+  printf("Digite o numero da base da potencia: ");
+  scanf("%d", &x);
+  printf("Digite numero do expoente da potencia: ");
+  scanf("%d", &n);
+  printf("Resultado: %d", potencia(x,n));
   return 0;
 }

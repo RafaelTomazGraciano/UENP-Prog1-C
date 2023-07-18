@@ -1,27 +1,17 @@
-/*Faca um programa que receba como entrada tres numeros positivos em ponto flutuante,
-em seguida, mostre quantos deles estao acima da media aritmetica.*/
+/*Faça um programa que receba como entrada um número inteiro n e exiba o resultado da
+seguinte soma:
+S = 1 + 1/2 + 1/3 + 1/4 + ... + 1/n */
 
 #include <stdio.h>
 
 int main()
 {
-    float numero1, numero2, numero3, media;
-    printf("Digite o primeiro numero: ");
-    scanf("%f", &numero1);
-    printf("Digite o segundo numero: ");
-    scanf("%f", &numero2);
-    printf("Digite o terceiro numero: ");
-    scanf("%f", &numero3);
-    media = (numero1+numero2+numero3)/3;
-
-    if(numero1 > media){
-        printf("\n %.2f e maior que a media",numero1);
-    }
-    if(numero2 > media){
-        printf("\n %.2f e maior que a media", numero2);
-    }
-    if(numero3 > media){
-        printf("\n %.2f e maior que a media", numero3);
-    }
-    return 0;
+  float n, soma = 0;
+  printf("Digite um numero: ");
+  scanf("%f", &n);
+  for(float i = 1 ;i <= n; i++){
+    soma += (1/i);
+  }
+  printf(" A soma e %.4f", soma);
+  return 0;
 }

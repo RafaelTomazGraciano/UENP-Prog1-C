@@ -1,21 +1,27 @@
-/*O  ́ındice de massa corporal (IMC)  ́e usado para identificar o peso ideal de uma pessoa. Ele
- ́e calculado dividindo a massa pelo quadrado da altura. Por exemplo, suponha que uma
-pessoa tenha 1,81m de altura e 77kg de massa. O IMC seria:
-
-77/1.81²~23.50
-
-Implemente um programa em C que, dada a massa e altura de uma pessoa, imprima o seu
-IMC.*/
+/*Faca um programa que receba como entrada tres numeros positivos em ponto flutuante,
+em seguida, mostre quantos deles estao acima da media aritmetica.*/
 
 #include <stdio.h>
 
 int main()
 {
-    float massa, altura;
-    printf("Digite o valor de sua massa corporal em Kg: ");
-    scanf("%f", &massa);
-    printf("Digite o valor da sua altura em metros: ");
-    scanf("%f", &altura);
-    printf("O seu IMC e: %.2f", massa/(altura*altura));
+    float numero1, numero2, numero3, media;
+    printf("Digite o primeiro numero: ");
+    scanf("%f", &numero1);
+    printf("Digite o segundo numero: ");
+    scanf("%f", &numero2);
+    printf("Digite o terceiro numero: ");
+    scanf("%f", &numero3);
+    media = (numero1+numero2+numero3)/3;
+
+    if(numero1 > media){
+        printf("\n %.2f e maior que a media",numero1);
+    }
+    if(numero2 > media){
+        printf("\n %.2f e maior que a media", numero2);
+    }
+    if(numero3 > media){
+        printf("\n %.2f e maior que a media", numero3);
+    }
     return 0;
 }

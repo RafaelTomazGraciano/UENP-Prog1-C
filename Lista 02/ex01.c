@@ -1,37 +1,20 @@
-/*Implemente um programa que leia as variaveis a, b e c e imprima os valores das quatros
-formulas seguintes:
-a) (a ∗ b)/c
-b) a²+b+5*c
-c) (a*b*c+b)+(c/3)*5-1
-d) (a*b*c)³/2 */
+/*Faça um programa que receba como entrada um caractere e informe se ele ́e uma vogal ou
+não.*/
 
 #include <stdio.h>
-#include <math.h>
+#include <ctype.h>
 
 int main()
 {
-    float a, b, c;
-    printf("Digite o valor de a: ");
-    scanf("%f", &a);
-    printf("\nDigite o valor de b: ");
-    scanf("%f", &b);
-    printf("\nDigite o valor de c: ");
-    scanf("%f", &c);
-
-    // Formula letra a
-
-    printf("\n O resultado da formula a e : %.2f", (a*b)/c);
-
-    // Formula letra b
-
-    printf("\n O resultado da formula b e: %.2f", a*a+b+5*c);
-
-    // Formula letra c
-
-    printf("\n O resultado da formula c e: %.2f", (a*b*c+b)+(c/3)*5-1);
-
-    // Formula letra d
-
-    printf("\n O resultado da formula d e: %.2f", pow ((a*b*c),3)/2);
+    char letra;
+    printf("Digite uma letra: ");
+    scanf("%c", &letra);
+    letra = tolower(letra);
+    if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u'){
+        printf("\n Este caractere e uma vogal"); 
+    }
+    else{
+        printf("\n Este caractere e uma consoante");
+    }
     return 0;
 }

@@ -1,19 +1,26 @@
-/*A  area do triangulo  ́e dada por:
-
-base ∗ altura/2
-
-Implemente um programa em C que receba a base e a altura de um triangulo e imprima a
-sua  ́area.*/
+/*Faca um programa que receba como entrada tres numeros inteiros e, em seguida, exiba o
+menor deles.*/
 
 #include <stdio.h>
 
 int main()
 {
-    float base, altura;
-    printf("Digite o valor da base do triangulo: ");
-    scanf("%f", &base);
-    printf("Digite o valor da altura do triangulo: ");
-    scanf("%f", &altura);
-    printf("A area do triangulo e: %.2f", base*altura/2);
+    int numero1, numero2, numero3, menor;
+    printf("Digite o numero 1: ");
+    scanf("%d", &numero1);
+    printf("Digite o numero 2: ");
+    scanf("%d", &numero2);
+    printf("Digite o numero 3: ");
+    scanf("%d", &numero3);
+    if(numero1 < numero2 && numero1 < numero3){
+        menor = numero1;
+    }
+    else if(numero2 < numero1 && numero2 < numero3){
+        menor = numero2;
+    }
+    else{
+        menor = numero3;
+    }
+     printf("\n O menor numero e: %d", menor);
     return 0;
 }

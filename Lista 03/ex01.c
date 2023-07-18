@@ -1,20 +1,20 @@
-/*Faça um programa que receba como entrada um caractere e informe se ele ́e uma vogal ou
-não.*/
+/*Faça um programa que receba dois números inteiros representando o intervalo (inicio) e
+(fim) de uma sequência, e depois imprima todos os números ́ımpares dentro deste intervalo.*/
 
 #include <stdio.h>
-#include <ctype.h>
 
 int main()
 {
-    char letra;
-    printf("Digite uma letra: ");
-    scanf("%c", &letra);
-    letra = tolower(letra);
-    if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u'){
-        printf("\n Este caractere e uma vogal"); 
+  int inicio, fim;
+  printf("Digite o valor que representa o inicio: ");
+  scanf("%d", &inicio);
+  printf("Digite o valor que representa o fim: ");
+  scanf("%d", &fim);
+  while(inicio <= fim){
+    if(inicio % 2 == 1){
+      printf("\n%d", inicio);
     }
-    else{
-        printf("\n Este caractere e uma consoante");
-    }
-    return 0;
+    inicio++;
+  }
+  return 0;
 }
