@@ -4,14 +4,15 @@ imprima o vetor na ordem inversa.*/
 #include <stdio.h>
 
 int main(){
-  int n, vetor[n];
+  int n;
   printf("Digite o tamanho do vetor: ");
   scanf("%d", &n);
+  int vetor[n];
   for(int i = 0; i < n; i++){
     printf("Digite o numero da posicao %d: ", i);
     scanf("%d", &vetor[i]);
   }
-  for(int i = n; i >= 0; i--){
+  for(int i = n-1; i >= 0; i--){
     printf("\n%d", vetor[i]);
   }
   return 0;
