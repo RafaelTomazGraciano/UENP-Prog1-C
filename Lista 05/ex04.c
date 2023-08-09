@@ -10,9 +10,9 @@ int main(){
     printf("Digite o numero da posicao %d: ", i);
     scanf("%d", &vetor[i]);
   }
-  for(int i = 0; i < 21; i++){
+  for(int i = 0; i < 20; i++){
     if(vetor[20] == vetor[i]){
-      
+      printf("\n %d e igual ao numero da posicao %d", vetor[20],i);
     }
   }
 return 0;

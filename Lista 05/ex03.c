@@ -3,7 +3,7 @@ armazene os numeros pares no vetor chamado par e os numeros ımpares no vetor ı
 Imprima os dois vetores resultante.*/
 
 #include <stdio.h>
-
+[]
 #define TAM 50
 
 int main(){
