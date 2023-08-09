@@ -10,10 +10,10 @@ int main(){
   scanf("%d", &n);
   int vetor[n];
   for(int i = 0; i < n; i++){
-    printf("Digite o valor da posicao %d: ", i);
+    printf("Digite o valor da posicao %d ou digite -1 para encerrar\n", i);
     scanf("%d", &vetor[i]);
     if(vetor[i] == -1){
-      return 1;
+      return 0;
     }
   }
   for(int i = 0; i < n; i++){
