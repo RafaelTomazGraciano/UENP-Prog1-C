@@ -1,4 +1,4 @@
-/*Usuario define a matriz, coloca as notas, e mostra*/
+/*Usuario define a matriz, coloca as notas, e mostra, e depois mostra o valores multiplicados por 5*/
 
 #include <stdio.h>
 
@@ -17,6 +17,13 @@ int main(){
   for(int i = 0; i <lin; i++){
     for(int j = 0; j < col; j++){
       printf(" %.2f", notas[i][j]);
+    }
+    printf("\n");
+  }
+  printf("\nNotas multiplicadas por 5\n");
+  for(int i = 0; i <lin; i++){
+    for(int j = 0; j < col; j++){
+      printf(" %.2f", notas[i][j]*5);
     }
     printf("\n");
   }
