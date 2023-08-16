@@ -5,7 +5,7 @@ valores multiplicados por 5, e tambem as medias das notas*/
 
 int main(){
   int lin, col;
-  float soma = 0, media = 0;
+  float soma = 0, media = 0, mediaMedia = 0, somaMedia = 0;
   printf("Digite o tamanho da matriz. Linhas e colunas\n");
   scanf("%d%d", &lin, &col);
   float notas[lin][col];
@@ -28,16 +28,6 @@ int main(){
       printf(" %.2f", notas[i][j]*5);
     }
     printf("\n");
-  }
-  printf("\nMedia Notas\n");
-  for(int i = 0; i <lin; i++){
-    soma = 0;
-    for(int j = 0; j < col; j++){
-      soma += notas[i][j];
-      media = soma/(j+1);
-    }
-    printf("\n");
-    printf(" %.2f", media);
   }
   return 0;
 }
