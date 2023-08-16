@@ -4,8 +4,9 @@
 
 int main(){
   int lin, col;
-  printf("Digite o tamanho da matriz 1. Linhas e colunas\n");
+  printf("Digite o tamanho da matriz. Linhas e colunas\n");
   scanf("%d%d", &lin, &col);
+  printf("\nMatriz 1\n");
   int matriz1[lin][col];
   for(int i = 0; i <lin; i++){
     for(int j = 0; j < col; j++){
@@ -13,8 +14,7 @@ int main(){
       scanf("%d",&matriz1[i][j]);
     }
   }
-  printf("Digite o tamanho da matriz 2. Linhas e colunas\n");
-  scanf("%d%d", &lin, &col);
+  printf("\nMatriz 2\n");
   int matriz2[lin][col];
   for(int i = 0; i <lin; i++){
     for(int j = 0; j < col; j++){
@@ -28,11 +28,12 @@ int main(){
       matriz3[i][j] = matriz1[i][j]+matriz2[i][j];
     }
   }
-  printf("Matriz de soma\n");
+  printf("\nMatriz de soma\n");
   for(int i = 0; i <lin; i++){
     for(int j = 0; j < col; j++){
       printf(" %d", matriz3[i][j]);
     }
     printf("\n");
   }
+  return 0;
 }
