@@ -1,5 +1,5 @@
 /*Usuario define a matriz, coloca as notas, e depois mostre os 
-valores multiplicados por 5, e tambem as medias das notas*/
+valores multiplicados por 5*/
 
 #include <stdio.h>
 
