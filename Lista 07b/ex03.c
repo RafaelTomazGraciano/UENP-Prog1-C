@@ -5,9 +5,15 @@ nenhuma ocorrencia do caractere na string, deve ser impresso o valor -1.*/
 #include<stdio.h>
 
 int main(){
-  char string[100], caractere;
+  char caractere;
+  int n;
+  printf("Digite o tamanho da string: ");
+  scanf("%d", &n);
+  setbuf(stdin, NULL);
+  char string[n];
   printf("Digite uma frase: ");
-  gets(string);
+  fgets(string, n, stdin); // usando fgets
+  setbuf(stdin, NULL);
   printf("Digite um caractere: ");
   scanf("%c", &caractere);
   for(int i = 0; string[i] != '\0'; i++){
