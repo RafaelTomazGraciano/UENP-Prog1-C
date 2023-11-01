@@ -14,4 +14,5 @@ int main(){
 
     troca(&a,&b);
     printf("%d %d", a, b);
+    return 0;
 }
