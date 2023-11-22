@@ -8,6 +8,8 @@ struct ponto
     int y;
 };
 
+typedef struct ponto ponto;
+
 //passagem por valor
 void imprime(struct ponto p){
     printf("%d, %d\n", p.x, p.y);
@@ -26,8 +28,8 @@ struct ponto insert(void){
 }
 
 int main(){
-    struct ponto p;
-    struct ponto *pp = &p;
+    ponto p;
+    ponto *pp = &p;
     (*pp).x = 3;
     (*pp).y = 4;
     printf("x: %d, y: %d\n", p.x, p.y);
@@ -36,7 +38,6 @@ int main(){
     pp -> x = 5;
     pp -> y = 6;
     printf("x: %d, y: %d\n", p.x, p.y);
-    printf("Coordenada (%d, %d)\n", *pp);
     insere(pp);
     imprime(p);
     p = insert();
