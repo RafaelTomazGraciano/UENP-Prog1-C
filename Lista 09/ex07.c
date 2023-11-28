@@ -18,7 +18,7 @@ struct produtos
     int quantidade;
 };
 
-
+    
 int main(){
     int n, pedido, quantidade;
     float total;
