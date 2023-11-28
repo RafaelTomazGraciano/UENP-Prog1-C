@@ -13,7 +13,7 @@ d. Exibir o nome do aluno com a maior nota da turma.*/
 
 #include <stdio.h>
 #include <string.h>
-# define MAX 3
+# define MAX 50
 
 struct cadastro
 {
