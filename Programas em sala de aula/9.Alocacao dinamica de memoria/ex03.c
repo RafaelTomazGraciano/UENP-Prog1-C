@@ -5,7 +5,7 @@
 
 int main(){
     int *array, i;
-    //aloca um array com 20 elementos inteiros
+    //aloca um array
     array  = (int *) calloc(20, sizeof(int));
     if(array == NULL){//verifica se eh possivel alocar memoria
         printf("Erro: memoria insuficiente");
