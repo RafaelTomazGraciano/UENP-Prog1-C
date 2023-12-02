@@ -43,5 +43,6 @@ int main(){
     for(int i = 0; i < cont; i++){
         printf("%d\n", array[i]);
     }
+    free(array);
     return 0;
 }

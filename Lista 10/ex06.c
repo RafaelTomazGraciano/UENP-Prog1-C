@@ -40,5 +40,6 @@ int main(){
             printf("%d  ", matriz[i][j]);
         }
     }
+    free(matriz);
     return 0;
 }

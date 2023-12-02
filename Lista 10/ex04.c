@@ -53,5 +53,8 @@ int main(){
             printf("%d  ", soma[i][j]);
         }
     }
+    free(m1);
+    free(m2);
+    free(soma);
     return 0;
 }

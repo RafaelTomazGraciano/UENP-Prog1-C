@@ -48,5 +48,6 @@ int main(){
         printf("\nO numero esta presente na matriz!");
     else
         printf("O numero nao esta presente na matriz!");
+    free(matriz);
     return 0;
 }

@@ -42,5 +42,7 @@ int main(){
             }
         }
     }
+    free(prog1);
+    free(prog2);
     return 0;
 }

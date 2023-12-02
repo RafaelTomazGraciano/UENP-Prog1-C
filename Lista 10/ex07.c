@@ -10,9 +10,9 @@ busca deve retornar 1 caso o livro seja encontrado e 0, caso contrario.*/
 struct dados
 {
     int codigo;
-    char titulo[100];
-    char autor[100];
-    char assunto[100];
+    char titulo[40];
+    char autor[40];
+    char assunto[50];
 };
 
 int busca(struct dados *livro, int n, int codigo){
@@ -29,25 +29,33 @@ int main(){
     char resposta;
     int i = 0, codigo;
     livro = (struct dados *) malloc(sizeof(struct dados));
+    if(livro == NULL){
+        printf("Erro: memoria insuficiente");
+        exit(1);
+    }
     do{
         printf("------------------LIVRO %d------------------\n", i);
         printf("Digite o codigo do livro: ");
         scanf("%d", &livro[i].codigo);
         setbuf(stdin, NULL);
         printf("Digite o titulo do livro: ");
-        fgets(livro[i].titulo, 100, stdin);
+        fgets(livro[i].titulo, 40, stdin);
         setbuf(stdin, NULL);
         printf("Digite o autor do livro: ");
-        fgets(livro[i].autor, 100, stdin);
+        fgets(livro[i].autor, 40, stdin);
         setbuf(stdin, NULL);
         printf("Digite o assunto do livro: ");
-        fgets(livro[i].assunto, 100, stdin);
+        fgets(livro[i].assunto, 50, stdin);
         setbuf(stdin, NULL);
         printf("Deseja resgitrar mais um livro?[S/N]\n");
         resposta = getchar();
         setbuf(stdin, NULL);
         i++;
         livro = (struct dados *) realloc(livro, i*sizeof(struct dados *));
+        if(livro == NULL){
+        printf("Erro: memoria insuficiente");
+        exit(1);
+        }
     }while(resposta == 'S' || resposta == 's');
 
     for(int j = 0; j < i; j++){
@@ -62,5 +70,6 @@ int main(){
         printf("O livro foi encontrado");
     else
     printf("O livro nao foi encontrado");
+    free(livro);
     return 0;
 }
