@@ -3,6 +3,7 @@ sua  ́area (a).*/
 
 #include <stdio.h>
 #include <math.h>
+
 int main()
 {
     float raio, perimetro, area, pi=3.14;
