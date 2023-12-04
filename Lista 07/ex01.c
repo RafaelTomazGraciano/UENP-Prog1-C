@@ -5,10 +5,9 @@ programar em linguagem C, o resultado deve ser C megaugnil me ramargorp.*/
 #include <string.h>
 
 int main(){
-  int aux, j = 0, tam;
-  char string[100], string2[100];
+  char string[100];
   printf("Digite uma frase: ");
-  gets(string);
+  fgets(string, 100, stdin);
   printf("Frase invertida: %s", strrev(string));
   return 0;
 }

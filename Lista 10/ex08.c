@@ -6,17 +6,18 @@ void alunoMaiorNota(struct aluno *vetAlunos, int tam) {..}*/
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 struct aluno
 {
     char nome[10];
     char sobrenome[10];
-    int nota;
+    float nota;
 };
 
 void alunoMaiorNota(struct aluno *vetAlunos, int tam){
     char nome[10], sobrenome[10];
-    int maiornota = 0;
+    float maiornota = 0;
     for(int i = 0; i < tam; i++){
         if(vetAlunos[i].nota > maiornota){
             maiornota = vetAlunos[i].nota;
@@ -26,7 +27,7 @@ void alunoMaiorNota(struct aluno *vetAlunos, int tam){
     }
     printf("Nome do aluno com a maior nota: %s", nome);
     printf("Sobrenome do aluno com a maior nota: %s", sobrenome);
-    printf("Nota do aluno: %d", maiornota);
+    printf("Nota do aluno: %.2f", maiornota);
 }
 
 int main(){
@@ -35,6 +36,7 @@ int main(){
     scanf("%d", &n);
     struct aluno *vetAlunos = malloc(sizeof(struct aluno));
     for(int i = 0; i < n; i++){
+        setbuf(stdin, NULL);
         printf("Digite o nome do aluno: ");
         fgets(vetAlunos[i].nome, 10, stdin);
         setbuf(stdin, NULL);
@@ -42,7 +44,7 @@ int main(){
         fgets(vetAlunos[i].sobrenome, 10, stdin);
         setbuf(stdin, NULL);
         printf("Digite a nota do aluno: ");
-        scanf("%d", &vetAlunos[i].nota);
+        scanf("%f", &vetAlunos[i].nota);
     }
     alunoMaiorNota(vetAlunos, n);
     return 0;
