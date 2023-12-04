@@ -1,1 +1,0 @@
-vetAlunos[i].nome
