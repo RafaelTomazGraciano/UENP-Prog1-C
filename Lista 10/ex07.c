@@ -51,10 +51,12 @@ int main(){
         resposta = getchar();
         setbuf(stdin, NULL);
         i++;
-        livro = (struct dados *) realloc(livro, i*sizeof(struct dados *));
-        if(livro == NULL){
-        printf("Erro: memoria insuficiente");
-        exit(1);
+        if(resposta == 'S' || resposta == 's'){
+            livro = (struct dados *) realloc(livro, i*sizeof(struct dados *));
+            if(livro == NULL){
+                printf("Erro: memoria insuficiente");
+                exit(1);
+            }
         }
     }while(resposta == 'S' || resposta == 's');
 
