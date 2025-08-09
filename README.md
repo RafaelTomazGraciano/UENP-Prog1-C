@@ -1,7 +1,7 @@
 # UENP - Programação 1
 
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](LICENSE)
-[![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
+<img src="https://img.shields.io/badge/language-C-blue.svg" alt="C Language">
 
 ## Sobre o Repositório
 
